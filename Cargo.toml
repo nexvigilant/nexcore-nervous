@@ -1,0 +1,17 @@
+
+[package]
+name = "nexcore-nervous"
+version = "1.0.0"
+edition = "2024"
+authors = ["NexVigilant Team <team@nexvigilant.com>"]
+license = "LicenseRef-Proprietary"
+description = "Nervous system for event routing — Reflex arcs(hook dispatch) + Myelination(hot path caching) + Sensory integration(context assembly) + Motor coordination(tool chains)"
+
+[dependencies]
+nexcore-chrono = { workspace = true }
+nexcore-lex-primitiva = { version = "0.1.0", path = "../nexcore-lex-primitiva", registry = "nexcore" }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = { version = "1.0.120" }
+
+[lints]
+workspace = true
